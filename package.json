@@ -1,8 +1,19 @@
 {
   "name": "frontend-interview-app",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-regular-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.1",
+    "styled-components": "^5.3.5"
+  },
+  "devDependencies": {
+    "@babel/runtime": "^7.17.9",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -11,12 +22,10 @@
     "@types/react": "17.0.3",
     "@types/react-dom": "^16.9.8",
     "@types/react-router-dom": "^5.1.6",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
-    "typescript": "^4.0.3",
-    "web-vitals": "^0.2.4"
+    "@types/styled-components": "^5.1.25",
+    "babel-preset-react-app": "^10.0.1",
+    "prettier": "^2.6.2",
+    "typescript": "^4.0.3"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -32,7 +41,13 @@
       "react-app",
       "react-app/jest",
       "eslint:recommended"
-    ]
+    ],
+    "rules": {
+      "no-unused-vars": "off",
+      "@typescript-eslint/no-unused-vars": [
+        "error"
+      ]
+    }
   },
   "browserslist": {
     "production": [
@@ -45,9 +60,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "prettier": "^2.2.1"
   },
   "keywords": [],
   "description": ""
