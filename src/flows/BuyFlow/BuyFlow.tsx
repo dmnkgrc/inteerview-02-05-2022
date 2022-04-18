@@ -14,6 +14,7 @@ export enum BuyFlowSteps {
   NAME = 'name',
 }
 
+//TODO: could ne moved to models file
 export interface CollectedDataModel {
   email: string | undefined;
   age: number | undefined;

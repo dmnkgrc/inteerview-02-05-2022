@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-import logo from './assets/img/logo.svg';
+import logo from 'assets/img/logo.svg';
 import './assets/css/App.css';
 import { BuyFlow, ProductIds, PRODUCT_IDS_TO_NAMES } from './flows';
 import { Button } from './ui-kit';

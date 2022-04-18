@@ -10,6 +10,7 @@ interface SummaryStepProps {
   collectedData: CollectedDataModel;
 }
 
+//TODO: could be moved to utils file
 const capitalizeFirstLetter = (text: string) =>
   text.charAt(0).toUpperCase() + text.slice(1);
 
