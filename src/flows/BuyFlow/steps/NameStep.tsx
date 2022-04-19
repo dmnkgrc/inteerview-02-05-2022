@@ -31,7 +31,7 @@ const StepTwo: React.FC<NameStepProps> = ({
   }>();
 
   useEffect(() => {
-    const [first, last] = props.name?.split(' ') || [];
+    const [first, last] = props.name?.split(' ') || ['', ''];
     setName({ first, last });
   }, [props.name]);
 
@@ -61,7 +61,7 @@ const StepTwo: React.FC<NameStepProps> = ({
         <Input
           id={`${mainClass}-firstname__input`}
           type={InputType.TEXT}
-          value={name?.first}
+          value={name.first}
           label={'First Name'}
           validationMessage={validationMessage?.firstName}
           onChange={(e) => setName({ ...name, first: e.currentTarget.value })}
@@ -78,7 +78,7 @@ const StepTwo: React.FC<NameStepProps> = ({
         <Input
           id={`${mainClass}-lastname__input`}
           type={InputType.TEXT}
-          value={name?.last}
+          value={name.last}
           label={'Last Name'}
           validationMessage={validationMessage?.lastName}
           onChange={(e) => setName({ ...name, last: e.currentTarget.value })}
